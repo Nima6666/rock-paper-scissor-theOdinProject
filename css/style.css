@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    background-color: dimgray;
+    position: relative;
+}
+
+.container1 {
+    background-color: dimgray;
+    display : flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: all 0.2s;
+    margin: 0;
+    opacity: 0;
+}
+
+.container1.on {
+    opacity: 1;
+    z-index: 5;
+}
+
+.container1 button {
+    height: 200px;
+    width: 200px;
+    font-size: 150px;
+    background-color: gray;
+    border-radius: 10px;
+}
+
+.counts {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    width: 300px;
+}
+
+.computerPlayDisplay {
+    display: flex;
+    height: 200px;
+    width: 200px;
+    margin-bottom: 20px;
+    font-size: 150px;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.8s;
+    opacity: 0;
+    transform: translateY(-40%);
+}
+
+.computerPlayDisplay.slide {
+    transform: translateY(0%) scale(1) rotate(180deg);
+    opacity: 1;
+}
+
+.buttons button{
+    transition: all 0.8s;
+}
+
+.buttons .active {
+    background-color: cyan;
+    transform: translateY(-10%) scale(1);
+}
+
+.container2 {
+    background-color: dimgray;
+    z-index: 2;
+    position: absolute;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.container2 .toggle {
+    background-color: dimgray;
+    font-size: 150px;
+    color: brown;
+    margin: 0px;
+}
+
+.container2 .endResult {
+    font-size: 100px;
+}
